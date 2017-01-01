@@ -4,13 +4,12 @@
 public class test {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
 
         System.out.println("덧셈");
-        System.out.println(add(arr));
+        System.out.println(add(4,5,6));
     }
 
-    public static int add(int[] arr) {
+    public static int add(int... arr) {
         int re = 0;
         for (int num : arr) {
             re += num;
